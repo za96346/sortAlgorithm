@@ -1,7 +1,6 @@
 package main
 
 import (
-	"algorithm/sorting"
 	"fmt"
 	"math/rand"
 )
@@ -20,8 +19,7 @@ func main() {
 		arr = append(arr, x)
 	}
 	fmt.Println("原始陣列", arr)
-	// sorting.BubbleSort(arr)
-	
-	fmt.Print("演算後陣列", sorting.SelectSort(arr), "\n")
+	// sorting.SelectSort(&arr)
+	fmt.Print("演算後陣列", arr, "\n")
 	
 }
